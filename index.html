@@ -118,10 +118,28 @@
             </div>
             <div id="lorem-ipsum">
                 <h2>Lorem Ipsum</h2>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                <script type="text/javascript">
+                    function traduirePhrase() {
+                        document.getElementById('text_to_translate').innerText = 'Osti de criss de câlice de tabarnak, c\'est fucké icitte !';
+                        document.getElementById('fr_button').innerText = Date();
+                    }
+                </script>
+                <p id="text_to_translate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <br>
+                <div id="fr_button">
+                    Uh-oh, the <abbr title="Office québecoise de la langue française">OQLF</abbr> is coming! Click this button to translate the above text into French:
+                    <br><button onclick="traduirePhrase()">En français, tabarnak !</button>
+                </div>
+            </div>
+            <div id="yo-dawg">
+                <h2>Yo Dawg</h2>
+                <a href="https://knowyourmeme.com/memes/xzibit-yo-dawg">Yo dawg, I heard you like webpages.</a> So I put a webpage in your webpage.
+                <br>
+                <iframe src="yodawg.html" name="yodawgframe" title="Yo Dawg"></iframe>
             </div>
         </div>
         <div class="footer">
