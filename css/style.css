@@ -8,9 +8,17 @@ body {
     background-color: antiquewhite;
 }
 
+ul {
+    padding-inline-start: 0px; /* default on this was 40px, I actually do not know why */
+}
+
 /* index.html */
 
-.title-bar {
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
     font-family: Georgia;
     color: purple;
@@ -19,39 +27,64 @@ body {
 }
 
 .content-box {
+    padding: 1.5rem;
     margin: auto 10%; /* two values in this instance; first is top/bottom, second is left/right */
     background-color: aliceblue;
 }
 
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: 75%;
+    padding: 1rem;
+    background-color: #303030;
+}
+
+.nav-bar .menu-item {
+    display: flex;
+    padding: 15px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    font-size: 2vh; /* what I did here - not good - usually I use media queries for responsive fonts */
+    color: #c0c0c0;
+}
+
+.menu-item a:hover {
+    color: #ff00ff;
+}
+
+
 .footer {
+    display: flex;
+    flex-direction: column;
     color: green;
     background-color: #202020;
 }
 
-.nav-bar ul {
-    list-style-type: none;
-    background-color: #282828;
-}
-
-.nav-bar li {
-    margin: 2px;
-    padding: 2px;
-    background-color: #303030;
-    display: inline;
-}
-
-.nav-bar a {
-    padding: 8px;
-    text-align: center;
-    color: #c0c0c0;
-}
-
-.nav-bar a:hover {
-    color: #ff00ff;
-}
-
 .copyright {
     text-align: center;
+}
+
+.copyright a {
+    text-decoration: none;
+}
+
+.orangered {
+    color: orangered;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media tr td {
+    padding: 1rem;
 }
 
 /* secret.html */
