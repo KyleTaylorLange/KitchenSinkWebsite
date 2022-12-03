@@ -41,3 +41,14 @@ body {
 .nav-bar a:hover {
     color: #ff00ff;
 }
+
+.secret {
+    margin: 25%;
+}
+
+.secret p {
+    color: yellow;
+    background-color:purple;
+    font-size: x-large;
+    text-align: center;
+}
