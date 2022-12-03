@@ -7,6 +7,9 @@
     <!-- Note: saying "css/" looks for folder css in current folder,
          while "/css/" looks for it in the domain's root folder. Neat! -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon (i.e. the icon that shows up next to the website name in the tab).
+        <link rel="icon" type="image/png (???)" href="???">
+    -->
     <script src="/js/script.js"></script>
     <title>Kitchen Sink Website</title>
 </head>
@@ -52,6 +55,9 @@
                         Lorem Ipsum
                     </a>
                 </li>
+                <li>
+                    <a href="/#yo-dawg">Yo Dawg</a>
+                </li>
             </ul>
         </div>
         <div class="content-box">
@@ -79,7 +85,10 @@
                     <li>???</li>
                     <li>Profit!</li>
                 </ol>
-                The last page of the tutorial where I left off can be accessed by clicking this beautiful button: <button onclick="document.location='https://www.w3schools.com/html/html_class.asp'">HTML Tutorial</button>
+                The last page of the tutorial where I left off can be accessed by clicking this beautiful button: 
+                <button onclick="document.location='https\://www.w3schools.com/html/html_layout.asp'">
+                    HTML Tutorial
+                </button>
                 <br>
                 It's a bold strategy, Cotton. Let's see if it pays off for him.
             </div>
@@ -109,28 +118,40 @@
             </div>
             <div id="lorem-ipsum">
                 <h2>Lorem Ipsum</h2>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incclassunt ut labore et dolore magna aliqua. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupclassatat non proclassent, sunt in culpa qui officia deserunt mollit anim class est laborum.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
         </div>
-        <div class="footer">
-            <p class="copyright">
-                Copyright &copy; <s>Kyle Taylor Lange</s> <strong>pwned</strong> <i>(jk)</i> 2022-1993, all lefts reserverd. It's for your own good though.
-                Seriously, why would you copy this. WHY<a href=secret.html><span class="orangered">?</span></a>
+        <div id="footer">
+            <hr>
+            <p style="text-align:center;">
+                Copyright Kyle Taylor Lange 2022-1993, all lefts reserverd. It's for your own good though.
+                Seriously, why would you copy this<a href=secret.html>?</a>
             </p>
             <!-- Links to professional websites. -->
             <table class="social-media">
                 <tr>
+                    <!-- Note that the sizing does not affect much since the height is always 32. 
+                         This is more to just document that it is a thing that can be implemented. -->
                     <td>
                         <a href="https://github.com/KyleTaylorLange" target="_blank">
-                            <img src="images/GitHub/GitHub-Mark-Light-32px.png" alt="GitHub" height="32">
+                            <picture>
+                                <source media="(min-height: 1200px)" srcset="images/GitHub/GitHub-Mark-Light-120px-plus.png">
+                                <source media="(min-height: 640px)" srcset="images/GitHub/GitHub-Mark-Light-64px.png">
+                                <img src="images/GitHub/GitHub-Mark-Light-32px.png" alt="GitHub" height="32">
+                            </picture>
                         </a>
                     </td>
                     <td>
                         <a href="https://linkedin.com/in/KyleTaylorLange" target="_blank">
-                            <img src="images/LinkedIn/In-White-34-2x.png" alt="LinkedIn" height="32">
+                            <picture>
+                                <source media="(min-height: 1280px)" srcset="images/LinkedIn/In-White-128-2x.png">
+                                <source media="(min-height: 720px)" srcset="images/LinkedIn/In-White-72-2x.png">
+                                <source media="(min-height: 340px)" srcset="images/LinkedIn/In-White-34-2x.png">
+                                <img src="images/LinkedIn/In-White-14-2x.png" alt="LinkedIn" height="32">
+                            </picture>
                         </a>
                     </td>
                 </tr>
