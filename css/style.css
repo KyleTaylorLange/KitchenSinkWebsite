@@ -2,42 +2,42 @@ body {
     background-color:antiquewhite;
 }
 
-#titlebar {
+.title-bar {
     font-family: Georgia;
     color: purple;
     background-color: #202020;
     text-align: center;
 }
 
-.contentbox {
+.content-box {
     margin-left:10%;
     margin-right:10%;
     background-color: aliceblue;
 }
 
-#footer {
+.footer {
     color: green;
     background-color: #202020;
 }
 
-.navbar ul {
+.nav-bar ul {
     list-style-type: none;
     background-color: #282828;
 }
 
-.navbar li {
+.nav-bar li {
     margin: 2px;
     padding: 2px;
     background-color: #303030;
     display: inline;
 }
 
-.navbar a {
+.nav-bar a {
     padding:8px;
     text-align: center;
     color: #c0c0c0;
 }
 
-.navbar a:hover {
+.nav-bar a:hover {
     color: #ff00ff;
 }
