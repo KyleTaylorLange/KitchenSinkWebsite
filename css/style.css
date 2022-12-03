@@ -1,5 +1,6 @@
 html {
     font-size: 1rem; /* this is actually the default; 1rem === 1 "root-em", which is normally 16px; this is the root */
+    scroll-behavior: smooth; /* newish feature! smooth scroll with no JavaScript! */
 }
 
 body {
