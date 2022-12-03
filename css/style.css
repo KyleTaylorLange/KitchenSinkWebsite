@@ -14,7 +14,7 @@ ul {
 
 /* index.html */
 
-header {
+.header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +32,7 @@ header {
     background-color: aliceblue;
 }
 
-nav {
+.nav {
     background-color: #303030;
     display: flex;
     flex-direction: row;
@@ -56,7 +56,7 @@ nav {
     background-color: #303030;
 } */
 
-nav .menu-item {
+.nav .menu-item {
     display: inline;
     padding: 15px;
 }
@@ -72,7 +72,7 @@ nav .menu-item {
 }
 
 
-footer {
+.footer {
     display: flex;
     flex-direction: column;
     color: green;
