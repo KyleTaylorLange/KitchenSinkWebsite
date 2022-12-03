@@ -7,6 +7,9 @@
     <!-- Note: saying "css/" looks for folder css in current folder,
          while "/css/" looks for it in the domain's root folder. Neat! -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon (i.e. the icon that shows up next to the website name in the tab).
+        <link rel="icon" type="image/png (???)" href="???">
+    -->
     <title>Kitchen Sink Website</title>
 </head>
 <body>
@@ -22,6 +25,7 @@
                 <li><a href="#Quote">Quote</a></li>
                 <li><a href="#Poem">Poem</a></li>
                 <li><a href="#LoremIpsum">Lorem Ipsum</a></li>
+                <li><a href="#YoDawg">Yo Dawg</a></li>
             </ul>
             <hr>
         </div>
@@ -50,7 +54,7 @@
                     <li>???</li>
                     <li>Profit!</li>
                 </ol>
-                The last page of the tutorial where I left off can be accessed by clicking this beautiful button: <button onclick="document.location='https://www.w3schools.com/html/html_id.asp'">HTML Tutorial</button>
+                The last page of the tutorial where I left off can be accessed by clicking this beautiful button: <button onclick="document.location='https://www.w3schools.com/html/html_layout.asp'">HTML Tutorial</button>
                 <br>
                 It's a bold strategy, Cotton. Let's see if it pays off for him.
             </div>
@@ -80,21 +84,41 @@
             </div>
             <div id="LoremIpsum">
                 <h2>Lorem Ipsum</h2>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                <script type="text/javascript">
+                    function traduirePhrase() {
+                        document.getElementById('TextToTranslate').innerText = 'Osti de criss de câlice de tabarnak, c\'est fucké icitte !';
+                        document.getElementById('fr_button').innerText = Date();
+                    }
+                </script>
+                <p id="TextToTranslate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <br>
+                <div id="fr_button">
+                    Uh-oh, the <abbr title="Office québecoise de la langue française">OQLF</abbr> is coming! Click this button to translate the above text into French:
+                    <br><button onclick="traduirePhrase()">En français, tabarnak !</button>
+                </div>
+            </div>
+            <div id="YoDawg">
+                <h2>Yo Dawg</h2>
+                <a href="https://knowyourmeme.com/memes/xzibit-yo-dawg">Yo dawg, I heard you like webpages.</a> So I put a webpage in your webpage.
+                <br>
+                <iframe src="yodawg.html" name="yodawgframe" title="Yo Dawg"></iframe>
             </div>
         </div>
         <div id="footer">
             <hr>
             <p style="text-align:center;">
-                Copyright Kyle Taylor Lange 2022-1993, all lefts reserverd. It's for your own good though.
+                Copyright Kyle Taylor Lange 2022-1993, all lefts reserved. It's for your own good though.
                 Seriously, why would you copy this<a href=secret.html>?</a>
             </p>
             <!-- Links to professional websites. -->
             <table>
                 <tr>
+                    <!-- Note that the sizing does not affect much since the height is always 32. 
+                         This is more to just document that it is a thing that can be implemented. -->
                     <td>
                         <a href="https://github.com/KyleTaylorLange" target="_blank">
                             <picture>
