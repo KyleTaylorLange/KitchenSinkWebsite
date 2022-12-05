@@ -58,6 +58,9 @@
                 <li class="menu-item">
                     <a href="#yo-dawg">Yo Dawg</a>
                 </li>
+                <li class="menu-item">
+                    <a href="#feedback">Feedback</a>
+                </li>
             </ul>
         </nav>
         <section class="content-box">
@@ -67,7 +70,7 @@
                 an obnoxiously large amount of web development stuff on display. There will be no real
                 rhyme or reason to most (if not all) of the content here from a functional standpoint, 
                 but in time it'll be jammed full of HTML, CSS, JavaScript, and perhaps even TypeScript!
-                <br>
+                <br/>
             </div>
             <div id="web-dev-plan">
                 <h2>Web Development Plan</h2>
@@ -89,7 +92,7 @@
                 <button onclick="document.location='https\://www.w3schools.com/html/html_layout.asp'">
                     HTML Tutorial
                 </button>
-                <br>
+                <br/>
                 It's a bold strategy, Cotton. Let's see if it pays off for him.
             </div>
             <div id="guitar-tunings">
@@ -102,18 +105,17 @@
                 Wow, you've made it this far? Take a break, you've earned it!
             </div>
             <div id="quote">
-                <h2>An Elightening Quote</h3>
-                <p>Here is a quote from the author himself: <q>Wow, this sure is some <abbr title="HyperText Markup Language">HTML</abbr>, right?</q></p>
+                <h2>An Enlightening Quote</h3>
+                <p>Here is a quote from the author himself: <q>Wow, this sure is some <abbr title="HyperText Markup Language">HTML</abbr/>, right?</q></p>
             </div>
             <div id="poem">
                 <h2>An Inspiring Poem</h2>
-                This poem took me over 12 years to write, so I hope you enjoy it:
-                <br>
-                <pre>
-                    Beautiful is this text,
-                    Though it may not be perplex.
-                    Formatted with the pre tag,
-                    I got HTML in the bag, swag!
+                <p>This poem took me over 12 years to write, so I hope you enjoy it:</p>
+                <br/>
+                <pre>Beautiful is this text,
+Though it may not be perplex.
+Formatted with the pre tag,
+I got HTML in the bag, swag!
                 </pre>
             </div>
             <div id="lorem-ipsum">
@@ -129,21 +131,52 @@
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <br>
+                <br/>
                 <div id="fr_button">
-                    Uh-oh, the <abbr title="Office québecoise de la langue française">OQLF</abbr> is coming! Click this button to translate the above text into French:
-                    <br><button onclick="traduirePhrase()">En français, tabarnak !</button>
+                    Uh-oh, the <abbr title="Office québecoise de la langue française">OQLF</abbr/> is coming! Click this button to translate the above text into French:
+                    <br/><button onclick="traduirePhrase()">En français, tabarnak !</button>
                 </div>
             </div>
             <div id="yo-dawg">
                 <h2>Yo Dawg</h2>
                 <a href="https://knowyourmeme.com/memes/xzibit-yo-dawg">Yo dawg, I heard you like webpages.</a> So I put a webpage in your webpage.
-                <br>
+                <br/>
                 <iframe src="yodawg.html" name="yodawgframe" title="Yo Dawg"></iframe>
+            </div>
+            <div id="feedback">
+                <h2>Feedback</h2>
+                <p>Please submit your feedback that I will totally listen to here:</p>
+                <form>
+                    <fieldset>
+                        <legend>Valuable Feedback:</legend>
+                        <label for="fname">Name:</label><br/>
+                        <input type="text" id="fname" name="fname"><br/>
+                        <!-- Radio Buttons -->
+                        <label>Country:</label><br/>
+                        <input type="radio" id="us" name="country" value="United States"/>
+                        <label for="us">United States</label><br/>
+                        <input type="radio" id="ca" name="country" value="Canada"/>
+                        <label for="ca">Canada</label><br/>
+                        <input type="radio" id="other" name="country" value="Other"/>
+                        <label for="other">Other</label><br/>
+                        <!-- Checkboxes -->
+                        <label>Platform(s):</label><br/>
+                        <input type="checkbox" id="pc" name="pc" value="PC"/>
+                        <label for="pc">PC</label><br/>
+                        <input type="checkbox" id="xbox" name="xbox" value="Xbox"/>
+                        <label for="xbox">XBox</label><br/>
+                        <input type="checkbox" id="playstation" name="playstation" value="PlayStation"/>
+                        <label for="playstation">PlayStation</label><br/>
+                        <!-- Message box -->
+                        <label for="message">Message:</label><br/>
+                        <textarea name="message" rows="5" cols="32">Type your drivel here.</textarea><br/>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
             </div>
         </section>
         <footer class="footer">
-            <hr>
+            <hr/>
             <p class="copyright">
                 Copyright Kyle Taylor Lange 2022-1993, all lefts reserved. It's for your own good though.
                 Seriously, why would you copy this? WHY<a href=secret.html><span class="orangered">?</span></a>
